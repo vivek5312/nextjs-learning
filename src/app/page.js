@@ -14,7 +14,9 @@ export default function Home() {
    <Link href="/news">Go to news page</Link>
    <br/>
    <br/>
-
+  <br/>
+  <br/>
+  <Link href='/product'>Go to Product Page</Link>
    <button onClick={()=>router.push("/about")}>Go to about page</button>
    <br/>
    <br/>
