@@ -1,6 +1,8 @@
 'use client'
 import Link from 'next/link'
 import styles from './page.module.css'
+import Image from 'next/image'
+import Profile from '../../public/vercel.svg'
 import { useRouter } from 'next/navigation'
 export default function Home() {
  const router=useRouter();
@@ -22,6 +24,17 @@ export default function Home() {
    <br/>
    <button onClick={()=>router.push("/login")}>Go to Login page</button>
    
+   <br/>
+   <Image
+   src={Profile}
+   />
+     <Image
+        src="http://upload.wikimedia.org/wikipedia/commons/1/19/Wikipedia_logo_red.png"
+        alt="Wikipedia Logo"
+        width={200}
+        height={100}
+      />
+    
     </main>
   )
 }
